@@ -1,0 +1,45 @@
+@import url(03-generic/reset.css);
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:black;
+    font-family: "Roboto Condensed" , sans-serif;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    block-size: 90px;
+
+}
+.header .nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.header .nav ul.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color:white;
+
+}
+.header .menu .item{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    padding-block-end: 5px;
+}
+.header .nav ul.social {
+    gap: 15px;
+}
+
+.header .tools {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
