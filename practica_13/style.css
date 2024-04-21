@@ -1,4 +1,6 @@
 @import url(03-generic/reset.css);
+
+
 * {
     box-sizing: border-box;
 }
@@ -7,7 +9,10 @@ body {
     font-family: "Roboto Condensed" , sans-serif;
 
 }
-
+.layout-box {
+    max-inline-size: 1280px;
+    margin-inline: auto;
+}
 .header {
     display: flex;
     align-items: center;
@@ -18,7 +23,6 @@ body {
 .header .nav ul {
     display: flex;
     align-items: center;
-    gap: 25px;
 }
 .header .nav ul.menu {
     display: flex;
@@ -35,6 +39,10 @@ body {
     padding-block-end: 5px;
 }
 .header .nav ul.social {
+    cursor: pointer;
+    border-bottom: 2px solid #e0011a;
+}
+.header .nav ul.social {
     gap: 15px;
 }
 
@@ -42,4 +50,16 @@ body {
     display: flex;
     align-items: center;
     gap: 40px;
+}
+.header .menu .separator {
+    font-size: 15px;
+}
+.header .separator {
+    font-size: 25px;
+    color: #737373;
+}
+.header svg {
+    fill: white;
+    inline-size: 18px;
+    block-size: 18px;
 }
