@@ -1,49 +1,103 @@
-@import url(03-generic/reset.css);
+@import url(reset.css);
 
 
 * {
     box-sizing: border-box;
 }
+
 body {
-    background-color:black;
-    font-family: "Roboto Condensed" , sans-serif;
+    background-color: #1a1d24;
+    font-family: "Roboto Condensed", sans-serif;
 
 }
+
+a {
+    text-decoration: none;
+}
+
 .layout-box {
     max-inline-size: 1280px;
     margin-inline: auto;
+    margin: auto;
 }
+
+/*img {
+    width: 100%;
+    height: auto;
+}*/
+
+div img {
+    position: relative;
+    overflow: hidden;
+    padding-top: .0001px;
+}
+
 .header {
+    position: sticky;
+    top: 0;
+    background-color: #1a1d24;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
     block-size: 90px;
+    padding-inline: 114px;
+    margin: auto;
+    position: sticky;
+    height: 10.0em;
 
 }
-.header .nav ul {
+
+.header .nav {
     display: flex;
     align-items: center;
 }
+
 .header .nav ul.menu {
     display: flex;
     align-items: center;
     gap: 25px;
-    color:white;
+    color: white;
 
 }
-.header .menu .item{
+
+.header .menu .item {
+    text-decoration: none;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: 2px solid transparent;
     padding-block-end: 5px;
+    margin: auto;
 }
+
+.header .nav .menu .item :hover {
+    cursor: pointer;
+    border-bottom: 2px solid red;
+
+}
+
+.item a {
+    color: white;
+
+}
+
+.item a:hover {
+    text-decoration: underline;
+    text-decoration-color: #e0011a;
+    text-decoration-offset: 2px;
+
+
+}
+
 .header .nav ul.social {
     cursor: pointer;
     border-bottom: 2px solid #e0011a;
+
 }
+
 .header .nav ul.social {
-    gap: 15px;
+    gap: 40px;
 }
 
 .header .tools {
@@ -51,15 +105,239 @@ body {
     align-items: center;
     gap: 40px;
 }
+
 .header .menu .separator {
     font-size: 15px;
 }
+
 .header .separator {
     font-size: 25px;
     color: #737373;
 }
+
 .header svg {
     fill: white;
     inline-size: 18px;
     block-size: 18px;
+
+}
+
+.redesSociales ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+
+}
+
+
+main.main {
+    background-color: #1a1d24;
+    left: -110.5px;
+    box-sizing: border-box;
+    width: 1351px;
+    max-width: 1351px;
+    padding-left: 110.5px;
+    padding-right: 110.5px;
+}
+
+.background-black {
+    max-inline-size: 1280px;
+    margin-inline: auto;
+    margin: auto;
+
+}
+
+.news {
+    display: flex;
+    gap: 30px;
+    color: white;
+    position: relative;
+
+
+}
+
+.news .image {
+    height: 610px;
+    width: 850px;
+    object-fit: cover;
+}
+
+.news .data-title {
+    max-inline-size: 400px;
+    padding-block-start: 33px;
+    padding-inline-start: 29px;
+    position: absolute;
+    right: 150px;
+    bottom: 0;
+    background-color: #1a1d24;
+    margin: 32px;
+
+
+}
+
+.news aside .title {
+    font-size: 19px;
+    margin-block-end: 32px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.news .data-title h2 {
+    font-size: 37px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.news .data-title p {
+    font-size: 16px;
+    color: #a8a8a8;
+    font-weight: bold;
+    margin-block: 24px;
+}
+
+.news .data-title a {
+    font-size: 11px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.news aside .item {
+    display: flex;
+    gap: 18px;
+}
+
+.news aside .item .data {
+    width: 40%;
+}
+
+.news aside .item-tittle {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.news aside .item-date {
+    color: #a8a8a8;
+    font-size: 11px;
+    text-transform: uppercase
+}
+
+.news aside .list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+.before-slider {
+    color: gray;
+    height: 9em;
+    justify-content: space-between;
+    font-family: "Roboto Condensed", sans-serif;
+    padding-inline: 114px;
+    font-size: 12px;
+    padding-top: 53px;
+}
+
+.before-slider button {
+    padding-right: 8px;
+}
+
+.before-slider button:hover {
+    color: white;
+
+}
+
+.before-slider .separator {
+    padding-right: 8px;
+}
+
+.fotos-content {
+    position: relative;
+    display: flex;
+    /*left: 84.4px;
+    box-sizing: border-box;*/
+    width: 80%;
+    /*max-width: 1047px;
+    padding-left: 26.5px;
+    padding-right: 26.5px;*/
+    color: white;
+    overflow: hidden;
+}
+
+.fotos-content article {
+    width: 20%;
+
+}
+
+/*.idontknow {
+    display: block;
+    width: 225px;
+    height: 309x;
+    background-image: url(assets/images/post-5-copyright-760x428.jpg);
+    background-size: cover;
+    background-position: center;
+}*/
+
+
+.fotos-content article img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 260px;
+    height: 247px; */
+    object-fit: cover;
+    /*border: 2px;
+    margin-top: 50px;
+    margin-inline-end: 10px;
+    margin-bottom: 100px;*/
+
+
+}
+
+.same-size {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.fotos-content article h3 {
+    display: flex;
+    position: absolute;
+    background-position: center;
+    color: white;
+    bottom: 67px;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.fotos-content article div {
+    display: flex;
+    position: absolute;
+    font-size: 12px;
+    background-position: center;
+    color: #737373;
+    bottom: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.fotos-content article h3:hover {
+    color: grey;
+}
+
+.fotos-content article div:hover {
+    color: white;
 }
